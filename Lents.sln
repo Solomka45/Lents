@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lents", "Lents\Lents.csproj", "{59F90B4D-2629-4C63-99E6-D1BAC9E461AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59F90B4D-2629-4C63-99E6-D1BAC9E461AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F90B4D-2629-4C63-99E6-D1BAC9E461AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F90B4D-2629-4C63-99E6-D1BAC9E461AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F90B4D-2629-4C63-99E6-D1BAC9E461AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87686919-D9B9-43A5-803A-27961C6C4238}
+	EndGlobalSection
+EndGlobal

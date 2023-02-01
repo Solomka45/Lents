@@ -1,0 +1,53 @@
+﻿<Page x:Class="Lents.Page.Page1Guest"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lents.Page"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1Guest">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical" Margin="10,0">
+                        <Label Content="Поиск"/>
+                        <TextBox x:Name="Search" Height="25" Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10,0">
+                        <Label Content="Сортировка"/>
+                        <ComboBox x:Name="Sort" Width="200" Height="25" >
+                            <ComboBoxItem Content="По умолчанию"/>
+                            <ComboBoxItem Content="По Возрастанию"/>
+                            <ComboBoxItem Content="По убыванию"/>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10,0">
+                        <Label Content="Фильтрация"/>
+                        <ComboBox x:Name="Filtr" Width="200" Height="25" >
+                            <ComboBoxItem>Всё</ComboBoxItem>
+                            <ComboBoxItem>Мненьше 500</ComboBoxItem>
+                            <ComboBoxItem>От 500 до 1000</ComboBoxItem>
+                            <ComboBoxItem>Больше 1000</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"></StackPanel>
+            <DataGrid x:Name="product" AutoGenerateColumns="False" IsReadOnly="True" Margin="70" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Номер" Binding="{Binding ID}" Width="*"/>
+                    <DataGridTextColumn Header="Наимнование" Binding="{Binding Title}" Width="*"/>
+                    <DataGridTextColumn Header="Тип продукта" Binding="{Binding ProductType.Title}" Width="*"/>
+                    <DataGridTextColumn Header="Артикул" Binding="{Binding ArticuleNumber}" Width="*"/>
+                    <DataGridTextColumn Header="Цена" Binding="{Binding MinCostForAgent}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
+
+    </Grid>
+</Page>

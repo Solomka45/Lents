@@ -1,0 +1,35 @@
+﻿<Page x:Class="Lents.Page.PageAvtoriz"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lents.Page"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageAvtoriz">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="127*"/>
+            <RowDefinition Height="130*"/>
+            <RowDefinition Height="93*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="92*"/>
+            <ColumnDefinition Width="207*"/>
+            <ColumnDefinition Width="101*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Guest" Grid.Column="2" Width="130" Height="30"  Foreground="Black" Background="#FFFF00E8" Content="Войти как гость" HorizontalAlignment="Center" Style="{DynamicResource mainBtn}" Grid.Row="3" VerticalAlignment="Top" Click="Guestt_Click" Margin="10,0,0,0"/>
+        <Button x:Name="Vxod" Grid.Column="1" Width="130" Height="30"   Foreground="Black" Background="#FFFF00E8" Content="Вход" HorizontalAlignment="Center" Style="{DynamicResource mainBtn}"  Margin="151,0,0,0" Grid.Row="3" VerticalAlignment="Top" Click="Vxod_Click"/>
+        <Button x:Name="Reg" Style="{DynamicResource mainBtn}" Content="Регистрация" Width="130" Height="30"   Foreground="Black" Background="#FFFF00E8" HorizontalAlignment="Center" Margin="44,0,0,0" Grid.Row="3" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="Pass"  Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="250" Height="30"  />
+        <TextBox x:Name="Login"  Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="250" Height="30" />
+        <TextBlock HorizontalAlignment="Left" Margin="135,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Center" Width="49"/>
+        <TextBlock HorizontalAlignment="Left" Margin="135,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Center" Width="49"/>
+        <TextBlock Grid.Column="1" Width="130" Height="30" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Регистрация" VerticalAlignment="Center"/>
+        <Button x:Name="Reg1" Content="Регистрация1" Width="130" Height="30"   Foreground="Black" Background="#FFFF00E8" HorizontalAlignment="Center" Style="{DynamicResource mainBtn}" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Center" Grid.Column="2" Click="Reg1_Click"/>
+
+
+    </Grid>
+</Page>
